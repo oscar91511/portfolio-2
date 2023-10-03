@@ -19,7 +19,7 @@ const Projects = () => {
         projects
       </h1>
       <div className="py-4">
-      <p className="text-center py-8 text-xl font-semibold text-stone-700">
+      <p className="text-center py-10 text-xl font-normal text-stone-600 ">
         In my learning journey at the Academia boot camp, I have had the
         opportunity to work on several exciting projects that have allowed me to
         apply my knowledge and skills in the development of software. Below, I
