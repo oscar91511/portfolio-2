@@ -28,7 +28,7 @@ const data = [
     title: "own computer company",
     duration: "",
     details:
-      "Assembly, sale and installation of software for technological equipment.Knowledge of computers, assembly of technological equipment and installation of operating systems and experience in Word, Excel, etc. programs.More than 100 computers assembled and sold among other products.Experience managing work teams 4 and 6 collaborators",
+      "Assembly, sale and installation of software for technological equipment. Knowledge of computers, assembly of technological equipment and installation of operating systems and experience in Word, Excel, etc. programs.More than 100 computers assembled and sold among other products.Experience managing work teams 4 and 6 collaborators",
   },
   {
     year: 2023,
