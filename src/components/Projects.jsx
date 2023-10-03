@@ -18,12 +18,13 @@ const Projects = () => {
       <h1 className="text-4xl font-bold text-center text-[#001b5e] ">
         projects
       </h1>
-      <p className="text-center py-8">
+      <div className="py-4">
+      <p className="text-center py-8 text-xl font-semibold text-stone-700">
         In my learning journey at the Academia boot camp, I have had the
         opportunity to work on several exciting projects that have allowed me to
         apply my knowledge and skills in the development of software. Below, I
         present some of my most recent projects. highlights:
-      </p>
+      </p></div>
       <div className="grid sm:grid-cols-2 gap-12 ">
         <ProjectItem img={Academlo_StoreImg} title="Store1 App" />
         <ProjectItem img={AmazingImg} title="Store2 App" />
