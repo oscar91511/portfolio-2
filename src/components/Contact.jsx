@@ -6,7 +6,7 @@ const Contact = () => {
       <h1 className="py-4 text-4xl font-bold text-center text-[#001b5e]">
         Contact
       </h1>
-      <form action="" method="POST" encType="multipart/form-data">
+      <form action="https://getform.io/f/eace1540-cf2c-4195-b2ec-082d44464fa4" method="POST" encType="multipart/form-data">
         <div className="grid md:grid-cols-2 gap-4 w-full py-2">
           <div className="flex flex-col">
             <label className="uppercase text-sm py-2">Name</label>
