@@ -11,11 +11,11 @@ const Home = () => {
   return (
     <div link="/">
       <img
-        className="w-full h-screen object-cover object-left"
+        className="w-full h-screen object-cover object-left "
         src="https://images.unsplash.com/photo-1587614295999-6c1c13675117?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
         alt="/"
       />
-      <div className="w-full h-screen absolute top-0 left-0 bg-white/50">
+      <div className="w-full h-screen absolute top-0 left-0 bg-white/20 ">
         <div className="max-w-[700px] m-auto h-full flex flex-col justify-center lg:items-start items-center">
           <h1 className="sm:text-5xl text-4xl font-bold text-gray-800">
             I'm Oscar Edward Lopez
