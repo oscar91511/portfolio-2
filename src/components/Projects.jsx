@@ -14,25 +14,27 @@ import storeImg from "../assets/store.jpg";
 const Projects = () => {
   return (
     <div link="Projects" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
-      <h1 className="text-4xl font-bold text-center text-[#001b5e]">projects</h1>
+      <h1 className="text-4xl font-bold text-center text-[#001b5e] ">
+        projects
+      </h1>
       <p className="text-center py-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus incidunt
-        rerum, saepe reprehenderit, unde nesciunt voluptates autem assumenda aut
-        beatae pariatur perspiciatis reiciendis cupiditate alias facilis
-        maiores! Inventore, omnis nesciunt?
+        In my learning journey at the Academia boot camp, I have had the
+        opportunity to work on several exciting projects that have allowed me to
+        apply my knowledge and skills in the development of software. Below, I
+        present some of my most recent projects. highlights:
       </p>
-      <div className="grid sm:grid-cols-2 gap-12">
-        <ProjectItem  img={Academlo_StoreImg} title='Academlo App' />
-        <ProjectItem  img={AmazingImg} title='Amazing App' />
-        <ProjectItem  img={Card_StatsImg} title='Card_Stats App' />
-        <ProjectItem  img={climateImg} title='Climate App' />
-        <ProjectItem  img={crudImg} title='Crud App' />
-        <ProjectItem  img={EteriumImg} title='Eterium App' />
-        <ProjectItem  img={galaxyImg} title='Galaxy App' />
-        <ProjectItem  img={pokedexImg} title='Pokedex App' />
-        <ProjectItem  img={rick_and_mortyImg} title='Rick_And_Morty App' />
-        <ProjectItem  img={storeImg } title='Store App' />
-        <ProjectItem  img={pokedexImg} title='Pokedex App' />
+      <div className="grid sm:grid-cols-2 gap-12 ">
+        <ProjectItem img={Academlo_StoreImg} title="Store1 App" />
+        <ProjectItem img={AmazingImg} title="Store2 App" />
+        <ProjectItem img={Card_StatsImg} title="Card1 App" />
+        <ProjectItem img={climateImg} title="Clim App" />
+        <ProjectItem img={crudImg} title="Crud App" />
+        <ProjectItem img={EteriumImg} title="Card2 App" />
+        <ProjectItem img={galaxyImg} title="Galaxy App" />
+        <ProjectItem img={pokedexImg} title="Poke App" />
+        <ProjectItem img={rick_and_mortyImg} title="Rick App" />
+        <ProjectItem img={storeImg} title="Store3 App" />
+        <ProjectItem img={pokedexImg} title="Portf App" />
       </div>
     </div>
   );
