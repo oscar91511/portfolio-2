@@ -10,6 +10,7 @@ import galaxyImg from "../assets/galaxy.jpg";
 import pokedexImg from "../assets/pokedex.png";
 import rick_and_mortyImg from "../assets/rick_and_morty.jpg";
 import storeImg from "../assets/store.jpg";
+import portfolio from "../assets/portfolio.png";
 
 const Projects = () => {
   return (
@@ -30,11 +31,11 @@ const Projects = () => {
         <ProjectItem img={climateImg} title="Clim App" />
         <ProjectItem img={crudImg} title="Crud App" />
         <ProjectItem img={EteriumImg} title="Card2 App" />
-        <ProjectItem img={galaxyImg} title="Galaxy App" />
+        <ProjectItem img={galaxyImg} title="Galax App" />
         <ProjectItem img={pokedexImg} title="Poke App" />
         <ProjectItem img={rick_and_mortyImg} title="Rick App" />
         <ProjectItem img={storeImg} title="Store3 App" />
-        <ProjectItem img={pokedexImg} title="Portf App" />
+        <ProjectItem img={portfolio} title="Portf App" />
       </div>
     </div>
   );
