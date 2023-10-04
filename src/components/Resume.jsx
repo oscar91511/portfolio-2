@@ -1,17 +1,25 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Resume = () => {
-  const resumeURL =
-    "https://drive.google.com/file/d/1v5zvvKrnzwzRNQhaLqODzoG1snDTmGVw/preview";
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+
+  const resumePaths = {
+    en: "https://drive.google.com/file/d/1v5zvvKrnzwzRNQhaLqODzoG1snDTmGVw/preview",
+    es: "https://drive.google.com/file/d/1THno5ZRLM14_mWxYYZ6NeqkuT2o0npbv/preview",
+  };
+
+  const resumeURL = resumePaths[currentLanguage] || resumePaths.en;
 
   return (
     <div link={"Resume"}>
       <h2 className="py-16 text-4xl font-bold text-center text-[#001b5e]">
-        Resume
+        {t("Resume")}
       </h2>
       <div>
         <p className="flex justify-center items-center text-xl text-stone-600 font-normal">
-          You can preview my CV and also download it:
+          {t("DescriptionCv")}
         </p>
         <div style={{ width: "100%", height: "900px" }}>
           <embed
@@ -28,7 +36,7 @@ const Resume = () => {
             rel="noopener noreferrer"
           >
             <button className="bg-[#001b5e] text-gray-100 mt-4 w-[40%] p-4 rounded-lg hover:animate-pulse">
-              Download PDF
+              {t("BottonPdf")}
             </button>
           </a>
         </p>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   FaGithub,
   FaLinkedinIn,
@@ -6,8 +6,26 @@ import {
   FaFacebookF,
 } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t, i18n } = useTranslation();
+  const [animationKey, setAnimationKey] = useState(0);
+  const [currentLanguage, setCurrentLanguage] = useState(
+    localStorage.getItem("language") || i18n.language
+  );
+
+  useEffect(() => {
+    setCurrentLanguage(i18n.language);
+
+    setAnimationKey(animationKey + 1);
+  }, [i18n.language]);
+
+  const animationSequences = {
+    en: ["Developer", "Coder", "Full Stack", "from Colombia"],
+    es: ["Desarrollador", "Programador", "Full Stack", "de Colombia"],
+  };
+
   return (
     <div link="/">
       <img
@@ -18,24 +36,15 @@ const Home = () => {
       <div className="w-full h-screen absolute top-0 left-0 bg-white/20 ">
         <div className="max-w-[700px] m-auto h-full flex flex-col justify-center lg:items-start items-center">
           <h1 className="sm:text-5xl text-4xl font-bold text-gray-800">
-            I'm Oscar Edward Lopez
+            {t("wellcome")}
           </h1>
           <h2 className="flex sm:text-3xl text-2xl pt-4 text-gray-800">
-            I'm a
+            {t("Present")}{" "}
             <TypeAnimation
-              sequence={[
-                // Same substring at the start will only be typed out once, initially
-                "Developer",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
-                "Coder",
-                2000,
-                "Full Stack",
-                2000,
-                "from Colombia",
-                1000,
-              ]}
+              key={animationKey}
+              sequence={animationSequences[currentLanguage]}
               wrapper="span"
-              speed={50}
+              speed={0}
               style={{
                 fontSize: "1em",
                 paddingLeft: "5px",
