@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import ProjectItem from "./ProjectItem";
 import Academlo_StoreImg from "../assets/Academlo_Store.jpg";
 import AmazingImg from "../assets/amazing-2.png";
@@ -11,13 +14,81 @@ import pokedexImg from "../assets/pokedex.png";
 import rick_and_mortyImg from "../assets/rick_and_morty.jpg";
 import storeImg from "../assets/store.jpg";
 import portfolio from "../assets/portfolio.png";
-import { useTranslation } from "react-i18next";
+
+const projects = [
+  {
+    id: 1,
+    img: portfolio,
+    title: "Portf App",
+    url: "https://portafolio-netlify.netlify.app/",
+  },
+  {
+    id: 2,
+    img: Academlo_StoreImg,
+    title: "Store1",
+    url: "https://store-academlo-shop.netlify.app/",
+  },
+  {
+    id: 3,
+    img: AmazingImg,
+    title: "Store2",
+    url: "https://ecommerce-store-proyect6.netlify.app/",
+  },
+  {
+    id: 4,
+    img: storeImg,
+    title: "Store3",
+    url: "https://tienda-virtual-1.netlify.app/",
+  },
+  {
+    id: 5,
+    img: Card_StatsImg,
+    title: "Card1",
+    url: "https://taildwind-vite-and-react.netlify.app/",
+  },
+  {
+    id: 6,
+    img: EteriumImg,
+    title: "Card2",
+    url: "https://tarjet-eth-equilibrium.netlify.app/",
+  },
+  {
+    id: 7,
+    img: climateImg,
+    title: "Climate",
+    url: "https://climate-api.netlify.app/",
+  },
+  {
+    id: 8,
+    img: crudImg,
+    title: "Crud",
+    url: "https://crud-data-base.netlify.app/",
+  },
+  {
+    id: 9,
+    img: galaxyImg,
+    title: "Galaxy",
+    url: "https://into-spaceship.netlify.app/",
+  },
+  {
+    id: 10,
+    img: pokedexImg,
+    title: "PokeApi",
+    url: "https://poke-dex-world.netlify.app/",
+  },
+  {
+    id: 11,
+    img: rick_and_mortyImg,
+    title: "RickApi",
+    url: "https://rick-and-morty-world.netlify.app/",
+  },
+];
 
 const Projects = () => {
   const { t } = useTranslation();
 
   return (
-    <div link="Projects" className="max-w-[1040px] m-auto md:pl-20 p-4 py-20">
+    <div className="max-w-[1040px] m-auto md:pl-20 p-4 py-20">
       <h1 className="text-4xl font-bold text-center text-[#001b5e] ">
         {t("Projects")}
       </h1>
@@ -26,18 +97,17 @@ const Projects = () => {
           {t("Description")}
         </p>
       </div>
-      <div className="grid sm:grid-cols-2 gap-12 ">
-        <ProjectItem img={Academlo_StoreImg} title={t("Store1 App")} />
-        <ProjectItem img={AmazingImg} title={t("Store2 App")} />
-        <ProjectItem img={Card_StatsImg} title={t("Card1 App")} />
-        <ProjectItem img={climateImg} title={t("Clim App")} />
-        <ProjectItem img={crudImg} title={t("Crud App")} />
-        <ProjectItem img={EteriumImg} title={t("Card2 App")} />
-        <ProjectItem img={galaxyImg} title={t("Galax App")} />
-        <ProjectItem img={pokedexImg} title={t("Poke App")} />
-        <ProjectItem img={rick_and_mortyImg} title={t("Rick App")} />
-        <ProjectItem img={storeImg} title={t("Store3 App")} />
-        <ProjectItem img={portfolio} title={t("Portf App")} />
+      <div className="grid sm:grid-cols-2 gap-12">
+        {projects.map((project) => (
+          <Link
+            key={project.id}
+            to={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ProjectItem img={project.img} title={project.title} project={project} />
+          </Link>
+        ))}
       </div>
     </div>
   );
