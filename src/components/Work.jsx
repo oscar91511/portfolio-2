@@ -6,7 +6,7 @@ const data = [
   {
     year: 2011,
     title: "workItem1",
-    duration: "3 mounths",
+    duration: "3 months",
     details: "detailItem1",
   },
   {

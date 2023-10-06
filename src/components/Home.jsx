@@ -61,7 +61,7 @@ const Home = () => {
     <div link="/">
       <img
         className="w-full h-screen object-cover object-left "
-        src="https://images.unsplash.com/photo-1587614295999-6c1c13675117?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+        src="https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
         alt="/"
       />
       <img
