@@ -22,13 +22,9 @@ const ProjectItem = ({ project }) => {
           {t("descriptionProjectItem")}
         </p>
 
-        <button
-          Link
-          to={`/project-details/${project.id}`}
-          className="text-center p-3 rounded-lg bg-white text-gray-700 hover:bg-blue-700 hover:text-white font-bold cursor-pointer text-lg "
-        >
+        <p className="text-center p-3 rounded-lg bg-white text-gray-700 hover:bg-blue-700 hover:text-white font-bold cursor-pointer text-lg">
           {t("DescriptionProjectItem2")}
-        </button>
+        </p>
       </div>
     </div>
   );
