@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Sidenav from "./components/Sidenav";
-import AppRoutes from "./components/appRoutes";
+import AppRoutes from "./components/AppRoutes";
 
 
 function App() {
