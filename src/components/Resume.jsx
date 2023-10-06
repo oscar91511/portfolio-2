@@ -13,9 +13,8 @@ const Resume = () => {
   const resumeURL = resumePaths[currentLanguage] || resumePaths.en;
 
   return (
-    <div link={"Resume"}>
-     
-      <h2 className="py-12  text-4xl font-bold text-center text-[#001b5e]">
+    <div>
+      <h2 className="py-12 text-4xl font-bold text-center text-[#001b5e]">
         {t("Resume")}
       </h2>
       <h1 className="font-semibold px-4 py-4 text-stone-600 text-xl">
@@ -26,11 +25,11 @@ const Resume = () => {
           {t("DescriptionCv")}
         </p>
         <div style={{ width: "100%", height: "900px" }}>
-          <embed
+          <iframe
             src={resumeURL}
-            type="application/pdf"
+            title="Resume"
             style={{ width: "100%", height: "100%" }}
-          />
+          ></iframe>
         </div>
         <p>
           <a
