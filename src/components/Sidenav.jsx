@@ -89,7 +89,7 @@ const Sidenav = () => {
       ) : (
         ""
       )}
-      <div className="md:block hidden fixed top-[25%] transition-transform z-10 ">
+      <div className="md:block hidden fixed top-[25%] transition-transform z-10 font-bold ">
         <div className="flex flex-col">
           <Link
             to="/"

@@ -88,16 +88,16 @@ const Projects = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="max-w-[1040px] m-auto md:pl-20 p-4 py-20">
-      <h1 className="text-4xl font-bold text-center text-[#001b5e] ">
+    <div className="max-w-[1040px] m-auto md:pl-20 p-4 py-20 ">
+      <h1 className="text-4xl font-bold text-center text-[#001b5e]  ">
         {t("Projects")}
       </h1>
-      <div className="py-4">
-        <p className="text-center py-10 text-xl font-normal text-stone-600 ">
+      <div className="py-4 ">
+        <p className="font-semibold py-10 text-xl  text-stone-600 ">
           {t("Description")}
         </p>
       </div>
-      <div className="grid sm:grid-cols-2 gap-12">
+      <div className="grid sm:grid-cols-2 gap-12 ">
         {projects.map((project) => (
           <Link
             key={project.id}

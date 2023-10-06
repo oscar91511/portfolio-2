@@ -6,6 +6,7 @@
   "languageButton": "Change Language",
   "wellcome": "I'm Oscar Edward Lopez",
   "Present": "I'm",
+  "bioDescription":"Hi, I'm a passionate Full Stack developer, specializing in front-end development. I thrive in collaborative team environments and excel at effective communication. My technical skill set includes proficiency in HTML5, JavaScript, CSS, Tailwind CSS, React, React Router, Vite, and Vue.js for front-end development, and Node.js, SQL, Express, and Git for back-end development. I'm experienced in making requests and performing CRUD operations in databases. I'm also a dedicated learner, staying updated with the latest trends in web development. I'm eager to tackle new challenges and create outstanding web experiences.",
   "Description": "In my learning journey at the Academia boot camp, I have had the opportunity to work on several exciting projects that have allowed me to apply my knowledge and skills in the development of software. Below, I present some of my most recent projects. Highlights:",
   "Store1 App": "Store1 ",
   "Store2 App": "Store2 ",
@@ -28,6 +29,7 @@
   "Subject": "Subject",
   "Message": "Message",
   "buttonCV": "Send Message",
+  "CopyRight": "All rights reserved 2023®",
 
   "item.title": "workItem1,workItem2,workItem3,workItem4,workItem5",
   "workItem1": "Commercial Advisor",

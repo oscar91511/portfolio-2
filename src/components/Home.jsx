@@ -17,13 +17,44 @@ const Home = () => {
 
   useEffect(() => {
     setCurrentLanguage(i18n.language);
-
     setAnimationKey(animationKey + 1);
   }, [i18n.language]);
 
   const animationSequences = {
     en: ["Developer", "Coder", "Full Stack", "from Colombia"],
     es: ["Desarrollador", "Programador", "Full Stack", "de Colombia"],
+  };
+
+  const handleGithubClick = () => {
+    window.open(
+      "https://github.com/oscar91511",
+      "_blank",
+      "noopener noreferrer"
+    );
+  };
+
+  const handleLinkedinClick = () => {
+    window.open(
+      "https://www.linkedin.com/in/oscar-eduardo-lopez-restrepo-968a91265/",
+      "_blank",
+      "noopener noreferrer"
+    );
+  };
+
+  const handleInstagramClick = () => {
+    window.open(
+      "https://www.instagram.com/gamingsofware_pereira/",
+      "_blank",
+      "noopener noreferrer"
+    );
+  };
+
+  const handleFacebookClick = () => {
+    window.open(
+      "https://www.facebook.com/profile.php?id=100087667838427",
+      "_blank",
+      "noopener noreferrer"
+    );
   };
 
   return (
@@ -33,12 +64,23 @@ const Home = () => {
         src="https://images.unsplash.com/photo-1587614295999-6c1c13675117?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
         alt="/"
       />
-      <div className="w-full h-screen absolute top-0 left-0 bg-white/20 ">
+      <img
+        src="/public/images/programer.png"
+        alt="Imagen adicional"
+        style={{
+          position: "absolute",
+          top: "28%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          maxWidth: "350px",
+        }}
+      />
+      <div className="w-full h-screen absolute top-0 left-0  bg-white/60 ">
         <div className="max-w-[700px] m-auto h-full flex flex-col justify-center lg:items-start items-center">
           <h1 className="sm:text-5xl text-4xl font-bold text-gray-800">
             {t("wellcome")}
           </h1>
-          <h2 className="flex sm:text-3xl text-2xl pt-4 text-gray-800">
+          <h2 className="flex sm:text-4xl text-2xl pt-4 text-gray-800">
             {t("Present")}{" "}
             <TypeAnimation
               key={animationKey}
@@ -53,14 +95,36 @@ const Home = () => {
               repeat={Infinity}
             />
           </h2>
-          <div className="flex justify-between pt-6 max-w-[200px] w-full">
-            <FaGithub className="cursor-pointer" size={20} />
-            <FaFacebookF className="cursor-pointer" size={20} />
-            <FaInstagram className="cursor-pointer" size={20} />
-            <FaLinkedinIn className="cursor-pointer" size={20} />
+          <div className="flex justify-between pt-6 max-w-[250px] w-full ">
+            <FaGithub
+              onClick={handleGithubClick}
+              className="cursor-pointer hover:text-yellow-300 to-blue-400/20"
+              size={40}
+            />
+            <FaFacebookF
+              onClick={handleFacebookClick}
+              className="cursor-pointer hover:text-blue-700 to-blue-400/20"
+              size={40}
+            />
+            <FaInstagram
+              onClick={handleInstagramClick}
+              className="cursor-pointer hover:text-red-700 to-blue-400/20"
+              size={40}
+            />
+            <FaLinkedinIn
+              onClick={handleLinkedinClick}
+              className="cursor-pointer hover:text-lime-400 to-blue-400/20"
+              size={40}
+            />
           </div>
         </div>
       </div>
+      <footer className="flex gap-2 p-4 justify-center text-white "></footer>
+
+      {/* Footer */}
+      <span className="font-bold  pb-2 flex items-center justify-center">
+        {t("CopyRight")}
+      </span>
     </div>
   );
 };
