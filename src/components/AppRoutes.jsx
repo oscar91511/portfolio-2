@@ -9,11 +9,11 @@ import Contact from "./Contact";
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" Component={Home} />
-      <Route path="/Work" Component={Work} />
-      <Route path="/Projects" Component={Projects} />
-      <Route path="/Resume" Component={Resume} />
-      <Route path="/Contact" Component={Contact} />
+      <Route path="/" element={<Home />} />
+      <Route path="/Work" element={<Work />} />
+      <Route path="/Projects" element={<Projects />} />
+      <Route path="/Resume" element={<Resume />} />
+      <Route path="/Contact" element={<Contact />} />
     </Routes>
   );
 };

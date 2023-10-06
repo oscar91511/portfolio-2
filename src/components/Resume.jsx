@@ -13,7 +13,7 @@ const Resume = () => {
   const resumeURL = resumePaths[currentLanguage] || resumePaths.en;
 
   return (
-    <div link={Resume}>
+    <div link={"Resume"}>
      
       <h2 className="py-12  text-4xl font-bold text-center text-[#001b5e]">
         {t("Resume")}
