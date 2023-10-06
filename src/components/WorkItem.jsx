@@ -1,9 +1,6 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 
 const WorkItem = ({ year, title, duration, details }) => {
-  const { t } = useTranslation();
-
   return (
     <ol className="flex flex-col md:flex-row relative border-l border-stone-200">
       <li className="mb-10 ml-4">
