@@ -65,11 +65,11 @@ const Home = () => {
         alt="/"
       />
       <img
-        src="/public/images/programer.png"
+        src="/images/programer.PNG"
         alt="Imagen adicional"
         style={{
           position: "absolute",
-          top: "28%",
+          top: "21%",
           left: "50%",
           transform: "translate(-50%, -50%)",
           maxWidth: "350px",
