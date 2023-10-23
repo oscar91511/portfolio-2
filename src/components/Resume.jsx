@@ -6,7 +6,7 @@ const Resume = () => {
   const currentLanguage = i18n.language;
 
   const resumePaths = {
-    en: "https://drive.google.com/file/d/1yjLIEa5pfnGG9ePKBPuBUzPMYdvM3HqU/preview",
+    en: "https://drive.google.com/file/d/1D-pQJrdeN41GvBzanhiUX4smAb6kSyu5/preview",
     es: "https://drive.google.com/file/d/1juWH2SpSNcfbPfXmByzB8eLt-qRZABdD/preview",
   };
 
