@@ -23,7 +23,7 @@
 
 [portfolio](/ "portfolio2")
 
-![Scremshot]([https://ibb.co/R7ngTnV](https://oscar-lopez224.imgbb.com/))
+![Scremshot]([https://ibb.co/R7ngTnV](https://i.ibb.co/3kXTmXL/portfolio-2.jpg)
 
 
 ***in which you can see my other projects, by clicking on them.***
